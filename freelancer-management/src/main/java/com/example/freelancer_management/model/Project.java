@@ -23,6 +23,6 @@ public class Project {
     private List<String> technologiesUsed;
 
     @ManyToOne
-    @JoinColumn(name = "freelancer_id")
+    @JoinColumn(name = "freelancer_id", nullable = false)
     private Freelancer freelancer;
 }
