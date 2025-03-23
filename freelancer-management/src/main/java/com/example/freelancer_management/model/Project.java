@@ -20,6 +20,7 @@ public class Project {
     private String description;
 
     @ElementCollection
+    @Column(name = "technologies_used")
     private List<String> technologiesUsed;
 
     @ManyToOne
