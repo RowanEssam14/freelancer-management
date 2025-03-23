@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "2d524934-4a0c-4279-b375-ad5ef3fb5e18",
+		"name": "freelancer-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28818394"
+	},
+	"item": [
+		{
+			"name": "portfolio/search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/portfolio/search?query=react",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"portfolio",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "react"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "portfolio/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"title\": \"AI Chatbot Platform\",\r\n  \"description\": \"A conversational AI chatbot built using Java and Spring Boot, integrated with a React frontend.\",\r\n  \"technologiesUsed\": [\"Java\", \"Spring Boot\", \"React\", \"OpenAI API\"],\r\n  \"freelancer\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/portfolio/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"portfolio",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "freelancers/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ahmad\",\r\n  \"email\": \"ahmad@example.com\",\r\n  \"password\": \"pass333\",\r\n  \"specialization\": \"Mobile Development\",\r\n  \"skill\": \"React Native, Node.js\",\r\n  \"hourlyRate\": 70.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/freelancers/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"freelancers",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

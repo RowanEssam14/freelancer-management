@@ -1,9 +1,11 @@
 package com.example.freelancermanagement.service;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.example.freelancermanagement.model.Project;
 import com.example.freelancermanagement.repository.ProjectRepository;
-import org.springframework.stereotype.Service;
-import java.util.List;
 
 @Service
 public class ProjectService {

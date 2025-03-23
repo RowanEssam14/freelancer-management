@@ -1,11 +1,13 @@
 package com.example.freelancermanagement.service;
 
+import java.util.List;
+
 import com.example.freelancermanagement.model.Freelancer;
 import com.example.freelancermanagement.repository.FreelancerRepository;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 
 @Service
 public class FreelancerService {

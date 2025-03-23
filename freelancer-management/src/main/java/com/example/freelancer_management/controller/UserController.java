@@ -1,10 +1,11 @@
 package com.example.freelancermanagement.controller;
 
-import com.example.freelancermanagement.model.Freelancer;
-import com.example.freelancermanagement.service.UserService;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+
+import com.example.freelancermanagement.model.Freelancer;
+import com.example.freelancermanagement.service.UserService;
 
 @RestController
 @RequestMapping("/api")

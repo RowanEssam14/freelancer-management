@@ -1,10 +1,12 @@
 package com.example.freelancermanagement.controller;
 
+import java.util.List;
+
+import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.example.freelancermanagement.model.Project;
 import com.example.freelancermanagement.service.ProjectService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-import java.util.List;
 
 @RestController
 @RequestMapping("/portfolio")
