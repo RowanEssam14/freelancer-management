@@ -8,8 +8,8 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface ProjectRepository extends JpaRepository<Project, Long> {
-   @Query(value = "SELECT * FROM project p WHERE " +
-        "to_tsvector('english', p.title || ' ' || array_to_string(p.technologies_used, ' ')) @@ plainto_tsquery(:query)",
-       nativeQuery = true)
+   @Query("SELECT p FROM Project p WHERE LOWER(p.title) LIKE LOWER(CONCAT('%', :query, '%')) " +
+       "OR EXISTS (SELECT t FROM p.technologiesUsed t WHERE LOWER(t) LIKE LOWER(CONCAT('%', :query, '%')))")
    List<Project> searchByTitleOrTechnologies(@Param("query") String query);
+
 }
