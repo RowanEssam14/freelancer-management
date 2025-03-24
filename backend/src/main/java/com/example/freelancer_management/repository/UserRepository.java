@@ -1,6 +1,6 @@
-package com.example.freelancermanagement.repository;
+package com.example.freelancer_management.repository;
 
-import com.example.freelancermanagement.model.User;
+import com.example.freelancer_management.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

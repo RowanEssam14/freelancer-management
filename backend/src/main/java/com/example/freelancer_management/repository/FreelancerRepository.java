@@ -1,6 +1,6 @@
-package com.example.freelancermanagement.repository;
+package com.example.freelancer_management.repository;
 
-import com.example.freelancermanagement.model.Freelancer;
+import com.example.freelancer_management.model.Freelancer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

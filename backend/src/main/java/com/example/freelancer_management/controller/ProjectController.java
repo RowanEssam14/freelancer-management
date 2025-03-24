@@ -1,15 +1,15 @@
-package com.example.freelancermanagement.controller;
+package com.example.freelancer_management.controller;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.freelancermanagement.model.Project;
-import com.example.freelancermanagement.service.ProjectService;
+import com.example.freelancer_management.model.Project;
+import com.example.freelancer_management.service.ProjectService;
 
 @RestController
-@RequestMapping("/portfolio")
+@RequestMapping("/api/portfolio")
 public class ProjectController {
 
     @Autowired

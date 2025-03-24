@@ -1,10 +1,10 @@
-package com.example.freelancermanagement.controller;
+package com.example.freelancer_management.controller;
 
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.freelancermanagement.model.Freelancer;
-import com.example.freelancermanagement.service.FreelancerService;
+import com.example.freelancer_management.model.Freelancer;
+import com.example.freelancer_management.service.FreelancerService;
 
 
 @RestController

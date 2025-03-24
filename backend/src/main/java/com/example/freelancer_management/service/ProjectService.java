@@ -1,11 +1,11 @@
-package com.example.freelancermanagement.service;
+package com.example.freelancer_management.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.freelancermanagement.model.Project;
-import com.example.freelancermanagement.repository.ProjectRepository;
+import com.example.freelancer_management.model.Project;
+import com.example.freelancer_management.repository.ProjectRepository;
 
 @Service
 public class ProjectService {

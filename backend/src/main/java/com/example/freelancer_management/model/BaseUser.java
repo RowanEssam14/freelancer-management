@@ -1,4 +1,4 @@
-package com.example.freelancermanagement.model;
+package com.example.freelancer_management.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

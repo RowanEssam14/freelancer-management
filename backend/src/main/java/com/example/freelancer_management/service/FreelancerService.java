@@ -1,9 +1,9 @@
-package com.example.freelancermanagement.service;
+package com.example.freelancer_management.service;
 
 import java.util.List;
 
-import com.example.freelancermanagement.model.Freelancer;
-import com.example.freelancermanagement.repository.FreelancerRepository;
+import com.example.freelancer_management.model.Freelancer;
+import com.example.freelancer_management.repository.FreelancerRepository;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,10 +1,10 @@
-package com.example.freelancermanagement.service;
+package com.example.freelancer_management.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.freelancermanagement.model.Freelancer;
-import com.example.freelancermanagement.repository.FreelancerRepository;
+import com.example.freelancer_management.model.Freelancer;
+import com.example.freelancer_management.repository.FreelancerRepository;
 
 @Service
 public class UserService {
